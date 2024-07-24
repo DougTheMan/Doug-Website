@@ -8,8 +8,8 @@ app = Flask(__name__)
 
 #---#---#---#---#---#---#---#---#---#---#---#---#
 
-@app.route("/")
-def IntroductionPage():
+@app.route("/HomePage/")
+def HomePage():
     return render_template('HomePage.html')
 
 #---#---#---#---#---#---#---#---#---#---#---#---#
