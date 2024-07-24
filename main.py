@@ -1,19 +1,8 @@
-from flask import Flask, render_template, redirect
+from app import app
 
-#---#---#---#---#---#---#---#---#---#---#---#---#
+#---#---#---#---#---#---#---#---#---#---#---#---
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
 
-app = Flask(__name__)
-
-
-#---#---#---#---#---#---#---#---#---#---#---#---#
-
-@app.route("/")
-def index():
-    return render_template('index.html')
-
-@app.route("/HomePage/")
-def HomePage():
-    return render_template('HomePage.html')
-
-#---#---#---#---#---#---#---#---#---#---#---#---#
