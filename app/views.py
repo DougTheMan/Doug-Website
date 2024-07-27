@@ -1,10 +1,10 @@
 from app import app
-from flask import render_template
+from flask import render_template, redirect
 
 @app.route("/")
 #login required
 def index():
-    return render_template('index.html')
+    return render_template('HomePage.html')
 
 @app.route("/homepage/")
 def HomePage():
