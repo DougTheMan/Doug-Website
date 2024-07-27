@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+    {% block BlockTitulo %}
+
+        Portifolio
+
+    {% endblock %}
+
+
+    {% block BlockConteudo %}
+
+    <br class="mt-4 p-4">
+
+    <div class="container">
+
+        <div class="row">
+
+        {% include 'nav.html' %}
+            <div class="rounded mt-1" style="background-color: #292A2C;">
+                <p style="font-size: smaller;" class="text-light mt-2 ">Here are some arts that I have made in my journey of 3 years as an artist.</p>
+            </div>
+            
+        </div>
+
+
+
+        <div class="row">
+
+            <br class="mt-4 p-4">
+            <br class="mt-4 p-4">
+
+            <div class="col mt-4 p-4"> 
+
+                <div class="card text-light p-1" style="background-color: #292A2C;">
+                    <img src="{{url_for('static',filename='imgs/TrunksNotDying.jfif')}}" class="card-img-top" alt="TrunksNotDyingArt">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col ">
+                                <h5>"Familiar Premonition."</h5>
+                            </div>
+                            <div class="col ">
+                                <p style="font-size: smaller;text-align: end;">-2023</p>
+                            </div>
+                        </div>
+                        
+                        <div class="row rounded" style="">
+                            <p class="card-text">Here we see Trunks on cell saga, but, this time things are different.</p>
+                            <div class="text-center">
+                                <a class="btn" style="background-color: #484848;" role="button">Click here</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+   
+   
+            </div>
+            <div class="col mt-4 p-4"> 
+
+                <div class="card text-light p-1" style="background-color: #292A2C;">
+                    <img src="{{url_for('static',filename='imgs/Scp_guard.jpg')}}" class="card-img-top" alt="TrunksNotDyingArt">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col ">
+                                <h5>"SCPiss off! Dammit."</h5>
+                            </div>
+                            <div class="col ">
+                                <p style="font-size: smaller;text-align: end;">-2023</p>
+                            </div>
+                        </div>
+                        
+                        <div class="row rounded" style="">
+                            <p class="card-text">Not everyone gives a damn about the guards on SCP, they are always just peons.</p>
+                            <div class="text-center">
+                                <a class="btn" style="background-color: #484848;" role="button">Click here</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+   
+   
+            </div>
+        
+
+        </div>
+
+        
+
+        <div class="row">
+
+
+        </div>
+        
+    </div>
+
+        {% include 'foot.html' %}
+
+
+    <br class="mt-4 p-4"><br class="mt-4 p-4">
+
+    {% endblock %}
