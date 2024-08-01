@@ -10,9 +10,17 @@ def index():
 def HomePage():
     return render_template('HomePage.html')
 
+@app.route("/homepage/extras")
+def ExtrasPage():
+    return render_template('ExtrasPage.html')
+
 @app.route("/portifolio/")
 def PortPage():
     return render_template('PortPage.html')
+
+@app.route("/portifolio/nsfw")
+def PortPageNSFW():
+    return render_template('PortPageNSFW.html')
 
 @app.route("/contacting/")
 def ContactPage():

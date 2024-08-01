@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+    {% block BlockTitulo %}
+
+        Portifolio
+
+    {% endblock %}
+
+
+    {% block BlockConteudo %}
+    
+    <br class="mt-4 p-4">
+    <br class="mt-4 p-4">
+
+    <div class="container">
+
+        <div class="row">
+
+        {% include 'nav.html' %}
+            <div class="rounded mt-1" style="background-color: #292A2C;">
+                <p style="font-size: smaller;" class="text-light mt-2 ">Reminder that you need to be above 18 to see this page. I'am Serious.</p>
+            </div>
+            
+        </div>
+
+
+
+ 
+
+        <div class="rounded mt-1 p-4 text-end" style="background-color: #292A2C;">
+            <a href="{{url_for('PortPage')}}" class="text-light mt-3 ">GO BACK</a>
+        </div>
+
+    </div>
+            
+
+
+        
+    
+        
+        
+    </div>
+
+        {% include 'foot.html' %}
+
+
+    <br class="mt-4 p-4"><br class="mt-4 p-4">
+
+    {% endblock %}

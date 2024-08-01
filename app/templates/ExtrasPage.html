@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+    {% block BlockTitulo %}
+
+        Introduction
+
+    {% endblock %}
+
+
+    {% block BlockConteudo %}
+
+    <br class="mt-4 p-4">
+    <br class="mt-4 p-4">
+
+    <div class="container">
+
+        {% include 'nav.html' %}
+
+        
+        <p class="text-light">
+            Only cool people see this page
+            <br>
+            I'am not alone, if you don't like my work you can check the work of these artists aswell that know how to draw different than me
+        </p>
+        
+    </div>
+
+    {% include 'foot.html' %}
+
+    <br class="mt-4 p-4"><br class="mt-4 p-4">
+
+    {% endblock %}
