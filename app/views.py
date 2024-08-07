@@ -25,8 +25,3 @@ def PortPageNSFW():
 @app.route("/contacting/")
 def ContactPage():
     return render_template('ContactPage.html')
-
-@app.route("/index/")
-#login required
-def index2():
-    return render_template('index.html')
