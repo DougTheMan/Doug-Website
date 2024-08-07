@@ -1,3 +1,8 @@
+#box{
+  animation-name: fade-up;
+  animation-duration: 2s;
+}
+
 @keyframes fade-up {
   0% {
     opacity: 0;
@@ -10,8 +15,5 @@
   }
 }
 
-.intro-1{
-  animation: fade-up 0.5s;
-}
 
-#aprender como se usa
+https://www.youtube.com/watch?v=u_GIT5MJAtc
